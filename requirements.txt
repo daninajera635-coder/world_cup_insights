@@ -1,0 +1,22 @@
+# World Cup Insights - Proyecto II, Programacion II (BD-143)
+# Instalar con:  pip install -r requirements.txt
+
+# --- Manipulacion de datos ---
+pandas==3.0.3
+numpy==2.5.1
+
+# --- Descarga del CSV publico ---
+requests==2.34.2
+
+# --- Visualizacion estatica ---
+matplotlib==3.11.0
+seaborn==0.13.2
+
+# --- Visualizacion interactiva ---
+plotly==6.9.0
+
+# --- Soporte para los notebooks ---
+ipykernel==7.3.0
+
+# --- Dashboard interactivo (puntos extra) ---
+streamlit==1.59.2
