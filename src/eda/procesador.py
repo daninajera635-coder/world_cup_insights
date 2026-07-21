@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 """Modulo EDA: limpieza, columnas derivadas y estadistica descriptiva."""
 
 import numpy as np
@@ -153,4 +151,3 @@ class ProcesadorEDA:
             "cantidad": conteo,
             "porcentaje": (conteo / len(self.df) * 100).round(2),
         })
->>>>>>> Stashed changes
