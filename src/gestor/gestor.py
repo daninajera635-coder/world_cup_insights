@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 """Modulo gestor: consultas de solo lectura sobre el DataFrame de partidos."""
 
 import pandas as pd
@@ -221,4 +219,3 @@ class GestorPartidos:
         return pd.DataFrame(filas).sort_values(
             "porcentaje_victorias", ascending=False
         ).reset_index(drop=True)
->>>>>>> Stashed changes

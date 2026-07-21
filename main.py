@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 """
 World Cup Insights - Punto de entrada del proyecto.
 
@@ -40,7 +38,10 @@ def main():
     # ------------------------------------------------------------------
     separador("1. INGESTA DE DATOS")
     cargador = CargadorDatos(ruta_raw=RUTA_RAW, ruta_processed=RUTA_PROCESSED)
-    df_raw = cargador.descargar_y_filtrar_raw()
+    # obtener_datos() reutiliza el CSV local si ya fue descargado; solo baja de
+    # internet cuando el archivo no existe. Asi el proyecto corre en la revision
+    # aunque no haya conexion.
+    df_raw = cargador.obtener_datos()
     print(f"Partidos de Copa Mundial encontrados: {len(df_raw)}")
 
     # ------------------------------------------------------------------
@@ -90,4 +91,3 @@ def main():
 
 if __name__ == "__main__":
     main()
->>>>>>> Stashed changes
