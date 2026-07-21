@@ -179,3 +179,10 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Datos del proyecto
+# NO se ignoran: el CSV procesado es un entregable obligatorio (entregable 7 del
+# enunciado) y el raw debe estar presente para que el proyecto corra en la revision
+# sin depender de tener internet. Ambos archivos pesan menos de 200 KB.
+!data/raw/*.csv
+!data/processed/*.csv
